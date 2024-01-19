@@ -12,13 +12,14 @@ const heading = React.createElement(
   [React.createElement("div", { id: "child1" }, [
     React.createElement("h1", {}, "H1 Tags"),
     React.createElement("h2", {}, "H2 tags"),
+
   ])
 ], [React.createElement("div", { id: "child2" }, [
     React.createElement("h1", {}, "H1 Tags"),
     React.createElement("h2", {}, "H2 tags"),
   ])
 ]);
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const root = ReactDOM.createRoot(document.querySelector("#root"));
 root.render(heading);
 
 
